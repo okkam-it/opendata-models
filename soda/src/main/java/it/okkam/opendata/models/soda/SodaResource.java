@@ -4,9 +4,11 @@ public class SodaResource {
 
   String name;
   String id;
-  String parent_fxf;
+  String[] parent_fxf;
   String description;
   String attribution;
+  String attribution_link;
+  String contact_email;
   String type;
   String updatedAt;
   String createdAt;
@@ -37,11 +39,11 @@ public class SodaResource {
     this.id = id;
   }
 
-  public String getParent_fxf() {
+  public String[] getParent_fxf() {
     return parent_fxf;
   }
 
-  public void setParent_fxf(String parent_fxf) {
+  public void setParent_fxf(String[] parent_fxf) {
     this.parent_fxf = parent_fxf;
   }
 
@@ -165,4 +167,20 @@ public class SodaResource {
     this.provenance = provenance;
   }
 
+  public String getAttribution_link() {
+    return attribution_link;
+  }
+
+  public void setAttribution_link(String attribution_link) {
+    this.attribution_link = attribution_link;
+  }
+
+  public String getContact_email() {
+    return contact_email;
+  }
+
+  public void setContact_email(String contact_email) {
+    this.contact_email = contact_email;
+  }
+  
 }
