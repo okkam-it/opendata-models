@@ -4,24 +4,28 @@ public class SodaResource {
 
   String name;
   String id;
-  String[] parent_fxf;
   String description;
   String attribution;
-  String attribution_link;
-  String contact_email;
   String type;
   String updatedAt;
   String createdAt;
   String metadata_updated_at;
   String data_updated_at;
   SodaPageViews page_views;
-  String[] columns_name;
   String[] columns_field_name;
-  String[] columns_datatype;
+  String[] columns_name;
   String[] columns_description;
+  String[] columns_datatype;
   SodaColumnFormat[] columns_format;
-  long download_count;
+  String[] parent_fxf;
   String provenance;
+  long download_count;
+  String lens_view_type;
+  String blob_mime_type;
+  boolean hide_from_data_json;
+  String attribution_link;
+  String contact_email;
+  String publication_date;
 
   public String getName() {
     return name;
@@ -182,5 +186,37 @@ public class SodaResource {
   public void setContact_email(String contact_email) {
     this.contact_email = contact_email;
   }
-  
+
+  public String getLens_view_type() {
+    return lens_view_type;
+  }
+
+  public void setLens_view_type(String lens_view_type) {
+    this.lens_view_type = lens_view_type;
+  }
+
+  public String getBlob_mime_type() {
+    return blob_mime_type;
+  }
+
+  public void setBlob_mime_type(String blob_mime_type) {
+    this.blob_mime_type = blob_mime_type;
+  }
+
+  public boolean isHide_from_data_json() {
+    return hide_from_data_json;
+  }
+
+  public void setHide_from_data_json(boolean hide_from_data_json) {
+    this.hide_from_data_json = hide_from_data_json;
+  }
+
+  public String getPublication_date() {
+    return publication_date;
+  }
+
+  public void setPublication_date(String publication_date) {
+    this.publication_date = publication_date;
+  }
+
 }
