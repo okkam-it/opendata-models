@@ -9,6 +9,7 @@ public class SodaClassification {
   String domain_category;
   String[] domain_tags;
   Map<String, String>[] domain_metadata;
+  Map<String, String>[] domain_private_metadata;
 
   public String[] getCategories() {
     return categories;
@@ -48,6 +49,14 @@ public class SodaClassification {
 
   public void setDomain_metadata(Map<String, String>[] domain_metadata) {
     this.domain_metadata = domain_metadata;
+  }
+
+  public Map<String, String>[] getDomain_private_metadata() {
+    return domain_private_metadata;
+  }
+
+  public void setDomain_private_metadata(Map<String, String>[] domain_private_metadata) {
+    this.domain_private_metadata = domain_private_metadata;
   }
 
 }

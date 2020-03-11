@@ -6,6 +6,7 @@ public class SodaResult {
   SodaMetadata metadata;
   String permalink;
   String link;
+  String preview_image_url;
   SodaOwner owner;
 
   public SodaResource getResource() {
@@ -55,4 +56,13 @@ public class SodaResult {
   public void setOwner(SodaOwner owner) {
     this.owner = owner;
   }
+
+  public String getPreview_image_url() {
+    return preview_image_url;
+  }
+
+  public void setPreview_image_url(String preview_image_url) {
+    this.preview_image_url = preview_image_url;
+  }
+
 }
